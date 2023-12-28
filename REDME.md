@@ -32,13 +32,14 @@ $ git clone https://github.com/SsamXI27/mypkg.git
 $ ros2 run mypkg talker
 ```
 * 出力結果
-表示なし
+  * 表示なし
 ### listener.pyの実行
 * talkerを実行させた後，別端末上に以下を入力
 ```
 $ ros2 run mypkg listener
 ```
 * 出力結果の例
+```
 [INFO] [1703763832.352170775] [listener]: Listen: 12
 [INFO] [1703763832.843576440] [listener]: Listen: 13
 [INFO] [1703763833.343520676] [listener]: Listen: 14
@@ -50,12 +51,13 @@ $ ros2 run mypkg listener
 [INFO] [1703763836.343617494] [listener]: Listen: 20
 [INFO] [1703763836.843872357] [listener]: Listen: 21
 [INFO] [1703763837.344143456] [listener]: Listen: 22
-
+```
 ### talk_listen.launch.pyの実行
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 * 出力結果の例
+```
 [INFO] [launch]: All log files can be found below /home/samx/.ros/log/2023-12-28-20-38-28-583970-RX78-2-168
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [170]
@@ -71,7 +73,7 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1703763513.853509347] [listener]: Listen: 8
 [listener-2] [INFO] [1703763514.353450107] [listener]: Listen: 9
 [listener-2] [INFO] [1703763514.853014284] [listener]: Listen: 10
-
+```
 ## 著作権とライセンス
 * このソフトウェアパッケージは, 3条項BSDライセンスの下, 再頒布および使用が許可されます.  
 * このパッケージのコードは, 下記のスライド (CC-BY-SA 4.0 by Ryuichi Ueda)のものを, 本人の許可を得て自身の著者としたものです. 
