@@ -1,3 +1,5 @@
+# SPDX-FileConpyrightText: 2023 Syousei Samitu
+# SPDX-License-Identifier: BSD-3-Clause
 import launch
 import launch.actions
 import launch.substitutions

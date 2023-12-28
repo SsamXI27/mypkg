@@ -6,11 +6,14 @@ ROS 2 パッケージのリポジトリです．
 
 ## それぞれの説明
 * talker.py
-パブリッシャを持つノードであり，数字を/countupを通じて送信する．
+  * パブリッシャを持つノードであり，数字を/countupを通じて送信する．
 * listener.py
-サブスクライバを持つノードであり，/countupからメッセージを受け取り表示する．
+  * サブスクライバを持つノードであり，/countupからメッセージを受け取り表示する．
 * talk_listen.launch.py
-talker.pyとlistener.pyを同時に立ち上げる．
+  * talker.pyとlistener.pyを同時に立ち上げる．
+
+## トピックについて
+* パブリッシャとサブスクライバでメッセージをやり取りするための仕組みです．
 
 ## 必要なソフトウェア
 * Python
@@ -24,13 +27,13 @@ talker.pyとlistener.pyを同時に立ち上げる．
 $ git clone https://github.com/SsamXI27/mypkg.git
 ```
 ## このコードの使用方法
-###taker.pyの実行
+### taker.pyの実行
 ```
 $ ros2 run mypkg talker
 ```
 * 出力結果
 表示なし
-###listener.pyの実行
+### listener.pyの実行
 * talkerを実行させた後，別端末上に以下を入力
 ```
 $ ros2 run mypkg listener
@@ -48,7 +51,7 @@ $ ros2 run mypkg listener
 [INFO] [1703763836.843872357] [listener]: Listen: 21
 [INFO] [1703763837.344143456] [listener]: Listen: 22
 
-###talk_listen.launch.pyの実行
+### talk_listen.launch.pyの実行
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
